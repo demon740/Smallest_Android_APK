@@ -1,0 +1,41 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.3.0'
+        //classpath 'com.android.tools.build:gradle:6.9.1'
+    }
+}
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 33
+    namespace 'com.myapp'
+
+    defaultConfig {
+        applicationId "com.name.app"
+        minSdk 23
+        versionCode 1
+        versionName "1.0"
+        targetSdk 33
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_6
+        targetCompatibility JavaVersion.VERSION_1_6
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+dependencies {
+
+}
+
